@@ -5,3 +5,14 @@ body {
 header {
   background-image: url("../img/wall.png");
 }
+
+header h1 {
+  color: black;
+  font-family: "Edu Tas Beginner", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+main {
+  font-family: "Sometype Mono", monospace;
+}
