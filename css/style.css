@@ -38,6 +38,7 @@ main {
   transition-duration: 0.25s;
   scale: 1.1;
   z-index: 1;
+  box-shadow: 5px 5px 5px 3px rgb(0 0 0 / 25%);
 }
 
 .card:hover .--vq-pin {
