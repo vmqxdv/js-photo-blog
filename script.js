@@ -16,23 +16,20 @@ const request = axios.get(endpoint)
     const dataArray = result.data;
 
     addNewImage(rowElement, dataArray);
-  });
 
-Promise.all([request]).then(() => {
-  const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.card');
 
-  cards.forEach(e => {
-    e.addEventListener('click', function () {
-      const img = this.querySelector('img.card-img-top');
+    cards.forEach(e => {
+      e.addEventListener('click', function () {
+        const img = this.querySelector('img.card-img-top');
 
-      imgOverlay.src = img.src;
-      imgOverlay.alt = img.alt;
+        imgOverlay.src = img.src;
+        imgOverlay.alt = img.alt;
 
-      overlay.classList.replace('d-none', 'd-flex');
+        overlay.classList.replace('d-none', 'd-flex');
+      });
     });
   });
-});
-
 
 // test overlay
 closeOverlayButton.addEventListener('click', function () {
