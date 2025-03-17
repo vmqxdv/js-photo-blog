@@ -16,3 +16,14 @@ header h1 {
 main {
   font-family: "Edu Tas Beginner", sans-serif;
 }
+
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
