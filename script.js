@@ -31,7 +31,7 @@ const request = axios.get(endpoint)
     });
   });
 
-// test overlay
+
 closeOverlayButton.addEventListener('click', function () {
   overlay.classList.replace('d-flex', 'd-none');
 });
