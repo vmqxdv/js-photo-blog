@@ -8,26 +8,34 @@
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 const rowElement = document.querySelector('.row');
 
-axios.get(endpoint)
+const request = axios.get(endpoint)
   .then(result => {
     const dataArray = result.data;
 
     addNewImage(rowElement, dataArray);
   });
 
+Promise.all([request]).then(() => {
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(e => {
+    e.addEventListener('click', function () {
+      console.log('sta funzionando');
+    });
+  });
+});
 
 // test overlay
-const testButton = document.getElementById('test');
 const overlay = document.getElementById('overlay');
 const closeOverlayButton = document.getElementById('close-overlay');
 
-testButton.addEventListener('click', function () {
-  overlay.classList.replace('d-none', 'd-flex');
-});
+// testButton.addEventListener('click', function () {
+//   overlay.classList.replace('d-none', 'd-flex');
+// });
 
 closeOverlayButton.addEventListener('click', function () {
-  overlay.classList.replace('d-flex', 'd-none');
-})
+  overlay.classList.replace('d-none', 'd-flex');
+});
 
 
 function addNewImage(rowElement, elements) {
