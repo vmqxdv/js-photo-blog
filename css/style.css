@@ -37,4 +37,9 @@ main {
   transform: rotate(10deg);
   transition-duration: 0.25s;
   scale: 1.1;
+  z-index: 1;
 }
+
+.card:hover .--vq-pin {
+  display: none;
+};
