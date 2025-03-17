@@ -16,6 +16,11 @@ axios.get(endpoint)
   });
 
 
+// test overlay
+const testButton = document.getElementById('test');
+console.log(testButton);
+
+
 function addNewImage(rowElement, elements) {
   let elementsToAdd = '';
 
