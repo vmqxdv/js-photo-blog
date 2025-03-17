@@ -27,3 +27,14 @@ main {
   left: 0;
   z-index: 2;
 }
+
+
+.card {
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: rotate(10deg);
+  transition-duration: 0.25s;
+  scale: 1.1;
+}
