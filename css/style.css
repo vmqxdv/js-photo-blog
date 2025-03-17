@@ -1,20 +1,18 @@
 body {
-  background-image: url("../img/cork.png");
+  background-image: url('../img/cork.png');
 }
 
+
 header {
-  background-image: url("../img/wall.png");
+  background-image: url('../img/wall.png');
 }
+
 
 header h1 {
   color: black;
-  font-family: "Edu Tas Beginner", sans-serif;
+  font-family: 'Edu Tas Beginner', sans-serif;
   font-size: 8rem;
   font-weight: 700;
-}
-
-main {
-  font-family: "Edu Tas Beginner", sans-serif;
 }
 
 
@@ -31,6 +29,17 @@ main {
 
 .card {
   cursor: pointer;
+}
+
+.card .card-text-date {
+  color: grey;
+  font-family: 'Sometype Mono', monospace;
+  font-size: 1.5rem;
+}
+
+.card .card-text-title {
+  font-family: 'Edu Tas Beginner', sans-serif;
+  font-size: 2rem;
 }
 
 .card:hover {

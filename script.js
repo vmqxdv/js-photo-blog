@@ -55,7 +55,8 @@ function formatElement(element) {
       <img class="--vq-pin translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
       <img src="${url}" class="card-img-top p-4 pb-0" alt="${title}">
       <div class="card-body p-4">
-        <p class="card-text">${date}</p>
+        <p class="card-text-date">${date}</p>
+        <p class="card-text-title"><b>${title.toUpperCase()}</b></p>
       </div>
     </div>
   </div>`
