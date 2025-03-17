@@ -19,10 +19,15 @@ axios.get(endpoint)
 // test overlay
 const testButton = document.getElementById('test');
 const overlay = document.getElementById('overlay');
+const closeOverlayButton = document.getElementById('close-overlay');
 
 testButton.addEventListener('click', function () {
   overlay.classList.replace('d-none', 'd-flex');
 });
+
+closeOverlayButton.addEventListener('click', function () {
+  overlay.classList.replace('d-flex', 'd-none');
+})
 
 
 function addNewImage(rowElement, elements) {
