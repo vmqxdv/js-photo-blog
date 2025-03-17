@@ -21,7 +21,7 @@ const testButton = document.getElementById('test');
 const overlay = document.getElementById('overlay');
 
 testButton.addEventListener('click', function () {
-  
+  overlay.classList.remove('d-none');
 });
 
 
