@@ -18,7 +18,11 @@ axios.get(endpoint)
 
 // test overlay
 const testButton = document.getElementById('test');
-console.log(testButton);
+const overlay = document.getElementById('overlay');
+
+testButton.addEventListener('click', function () {
+  
+});
 
 
 function addNewImage(rowElement, elements) {
