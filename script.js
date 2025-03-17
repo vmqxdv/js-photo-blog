@@ -52,7 +52,7 @@ function formatElement(element) {
 
   return `<div class="col-lg-4 col-md-6 col-sm-12 mb-5">
     <div class="card rounded-0 mb-5">
-      <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
+      <img class="--vq-pin translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
       <img src="${url}" class="card-img-top p-4 pb-0" alt="${title}">
       <div class="card-body p-4">
         <p class="card-text">${date}</p>
