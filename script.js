@@ -7,3 +7,10 @@
 
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 const rowElement = document.querySelector('.row');
+
+axios.get(endpoint)
+  .then(result => {
+    const dataArray = result.data;
+
+    console.log(dataArray);
+  });
